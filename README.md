@@ -11,6 +11,8 @@ This repo is designed to be the jumping point to initializing and setting up the
 >   Designed run the file-modification portions of the webserver-setup script.
 >   EXAMPLE USE : Make changes to the github version of nginx.conf THEN run the 'run-webserver-update.sh'
 
+``sudo sh run-webserver-update.sh``
+
 ### run-dbserver-setup.sh :
 
 >   Designed to setup the database and other storage applications.
@@ -28,5 +30,5 @@ This repo is designed to be the jumping point to initializing and setting up the
 ## Updating the Server Setup Repository
 
 - cd ~/base-server-setup
-- git update
+- git pull
 
