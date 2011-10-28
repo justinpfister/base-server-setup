@@ -1,8 +1,12 @@
-Run this :
+Run this from ~/:
 
 wget -O server-setup.tar.gz https://github.com/justinpfister/base-server-setup/tarball/master
 
 sudo tar -zxvf server-setup.tar.gz
+
+mv justinpfister-base-server-setup* base-server-setup
+
+cd base-server-setup
 
 sudo sh runit.sh
 
