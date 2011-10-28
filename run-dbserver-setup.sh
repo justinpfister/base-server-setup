@@ -1,20 +1,11 @@
 #!/bin/sh
 
-sudo sh server-setup.sh
+sudo apt-get update
 
-sudo sh nginx-setup.sh
+sudo apt-get upgrade
 
-sudo sh webapp-setup.sh
+sudo apt-get -y install nginx php5-fpm
 
-sudo sh init-scripts/setup-nginx.sh
-
-sudo sh mysql-setup.sh
-
-sudo apt-get -y install phpmyadmin
-
-sudo sh file-mods.sh
-
-
-#################  Special DB Add-ons ########
-
-sudo /bin/cp -Rf configs/db_server /usr/local/nginx/conf/sites-enabled/default
+sudo debconf-set-selections <<< 'tempsqlpw'
+sudo debconf-set-selections <<< 'tempsqlpw'
+sudo apt-get -y mysql-server
