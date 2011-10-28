@@ -28,7 +28,7 @@ server {
     }
 
 server {
-    listen                  listen 443 hello.kyotist.com ssl;
+    listen                  443 hello.kyotist.com ssl;
     ssl                     on;
     ssl_certificate         /etc/ssl/certs/openyardtempssl.crt
     ssl_certificate_key     /etc/ssl/private/openyardtempssl.key
