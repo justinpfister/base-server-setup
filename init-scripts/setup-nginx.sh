@@ -1,6 +1,8 @@
 #!/bin/sh
 
-sudo /bin/cp -Rf /base-server-setup/init-scripts/nano.sh /etc/init.d/nano
+sudo touch /etc/init.d/nginx
+
+sudo /bin/cp -Rf init-scripts/nginx.sh /etc/init.d/nginx
 
 sudo chmod +x /etc/init.d/nginx
 
