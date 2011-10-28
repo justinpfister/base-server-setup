@@ -1,7 +1,7 @@
 server {
     listen                  80;
  	server_name             mysql.antijob.com;
-    root                    /etc/phpmyadmin;
+    root                    /var/www/phpmyadmin;
     #charset koi8-r;
     #access_log  logs/host.access.log  main;
 
@@ -32,7 +32,7 @@ server {
     ssl                     on;
     ssl_certificate         /etc/ssl/certs/openyardtempssl.crt;
     ssl_certificate_key     /etc/ssl/private/openyardtempssl.key;
-    root                    /etc/phpmyadmin;
+    root                    /var/www/phpmyadmin;
 
         location ~ .php$ {
             fastcgi_pass   127.0.0.1:9000;

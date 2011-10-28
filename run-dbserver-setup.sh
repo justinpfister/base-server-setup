@@ -16,7 +16,7 @@ sudo wget -O phpmyadmin.tar.gz http://downloads.sourceforge.net/project/phpmyadm
 
 sudo tar -zxvf phpmyadmin.tar.gz
 
-sudo /bin/cp -Rf configs/nginx.conf /etc/nginx/nginx.conf
+sudo /bin/cp -Rf configs/db_nginx.conf /etc/nginx/nginx.conf
 
 sudo /bin/cp -Rf configs/db_server /etc/nginx/sites-enabled/default
 
