@@ -1,10 +1,10 @@
 #!/bin/sh
 
-sudo mkdir /usr/local/nginx/sites-available
+sudo mkdir /usr/local/nginx/conf/sites-available
 
-sudo mkdir /usr/local/nginx/sites-enabled
+sudo mkdir /usr/local/nginx/conf/sites-enabled
 
-sudo touch /usr/local/nginx/sites-enabled/default
+sudo touch /usr/local/nginx/conf/sites-enabled/default
 
 # Set nginx base config files
 sudo ../file-mods/nginx-configs.sh
