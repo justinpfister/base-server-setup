@@ -1,0 +1,28 @@
+###################################################
+##      default locations :
+###################################################
+##
+##      /etc/ssl/certs/openyardtempssl.crt
+##
+##      /etc/ssl/private/openyardtempssl.key
+##
+####################################################
+
+cd ~/
+mkdir temp
+cd temp
+
+openssl genrsa -des3 -out openyardtempssl.key 1024
+
+openssl req -new -key openyardtempssl.key -out openyardtempssl.csr
+
+cp openyardtempssl.key openyardtempssl.key.org
+openssl rsa -in openyardtempssl.key.org -out openyardtempssl.key
+
+openssl x509 -req -days 365 -in openyardtempssl.csr -signkey openyardtempssl.key -out openyardtempssl.crt
+
+sudo cp openyardtempssl.crt /etc/ssl/certs/
+
+sudo cp openyardtempssl.key /etc/ssl/private/
+
+Completed! you are free to delete temp files
