@@ -29,10 +29,10 @@ server {
 
 server {
     server_name             hello.kyotist.com;
-    listen                  443
+    listen                  443;
     ssl                     on;
-    ssl_certificate         /etc/ssl/certs/openyardtempssl.crt
-    ssl_certificate_key     /etc/ssl/private/openyardtempssl.key
+    ssl_certificate         /etc/ssl/certs/openyardtempssl.crt;
+    ssl_certificate_key     /etc/ssl/private/openyardtempssl.key;
     root                    /usr/local/nginx/html;
 
         location ~ .php$ {
