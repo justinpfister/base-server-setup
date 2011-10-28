@@ -28,11 +28,11 @@ server {
     }
 
 server {
-    listen                  443 hello.kyotist.com ssl;
+    server_name             hello.kyotist.com;
+    listen                  443
     ssl                     on;
     ssl_certificate         /etc/ssl/certs/openyardtempssl.crt
     ssl_certificate_key     /etc/ssl/private/openyardtempssl.key
-    keepalive_timeout       70;
     root                    /usr/local/nginx/html;
 
         location ~ .php$ {
