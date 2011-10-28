@@ -6,13 +6,6 @@ server {
     #access_log  logs/host.access.log  main;
 
         location / {
-            if (!-f $request_filename) {
-                rewrite ^(.*)(.jpg|.JPG|.gif|.GIF|.png|.PNG)$ /resize$1$2 last;
-                }
-        }
-
-        location /resize {
-            perl resize::handler;
         }
 
         error_page   500 502 503 504  /50x.html;
