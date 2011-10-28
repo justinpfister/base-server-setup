@@ -1,8 +1,6 @@
 This repo is designed to be the jumping point to initializing and setting up the various server environments.
 
-==============
-
-##Files :
+##Usig the Following Files :
 
 ###  run-webserver-setup.sh :
 
