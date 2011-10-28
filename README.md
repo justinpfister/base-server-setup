@@ -3,7 +3,7 @@ This repo is designed to be the jumping point to initializing and setting up the
 Files :
 ----------
 
-<b>run-webserver-setup.sh :</b>
+# run-webserver-setup.sh :
 Designed to setup applications and run apt-get etc. This should only be run once.
 
 
