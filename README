@@ -1,5 +1,9 @@
 Run this from ~/:
 
+################ START ##########
+
+#!/bin/sh
+
 wget -O server-setup.tar.gz https://github.com/justinpfister/base-server-setup/tarball/master
 
 sudo tar -zxvf server-setup.tar.gz
@@ -10,6 +14,4 @@ cd base-server-setup
 
 sudo sh runit.sh
 
-
-
-This file was created by JetBrains PhpStorm 2.1.5 for binding GitHub repository
+###### END #################
