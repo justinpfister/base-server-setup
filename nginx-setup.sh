@@ -55,7 +55,7 @@ sudo make
 
 sudo make install
 
-sudo /usr/local/sbin/nginx
+# sudo /usr/local/sbin/nginx
 
 
 #####
