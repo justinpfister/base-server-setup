@@ -1,17 +1,26 @@
-Run this from ~/:
+This repo is designed to be the jumping point to initializing and setting up the various server environments.
 
-################ START ##########
+Files :
+----------
 
-#!/bin/sh
+<b>run-webserver-setup.sh :</b>
+Designed to setup applications and run apt-get etc. This should only be run once.
 
-wget -O server-setup.tar.gz https://github.com/justinpfister/base-server-setup/tarball/master
 
-sudo tar -zxvf server-setup.tar.gz
 
-mv justinpfister-base-server-setup* base-server-setup
+
+
+
+
+######
+## Initial Server Setup
+#####
+
+git clone git@github.com:justinpfister/base-server-setup.git
 
 cd base-server-setup
 
-sudo sh runit.sh
+sudo sh run-webserver.sh
 
-###### END #################
+#####################################
+
