@@ -12,4 +12,9 @@ sudo sh mysql-setup.sh
 
 sudo apt-get -y install phpmyadmin
 
-#sudo sh file-mods.sh
+sudo sh file-mods.sh
+
+
+#################  Special DB Add-ons ########
+
+sudo /bin/cp -Rf configs/db_server /usr/local/nginx/conf/sites-enabled/default
