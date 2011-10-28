@@ -12,4 +12,4 @@ sudo sh mysql-setup.sh
 
 sudo apt-get -y install phpmyadmin
 
-sudo sh file-mods.sh
+#sudo sh file-mods.sh

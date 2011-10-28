@@ -1,0 +1,41 @@
+server {
+    listen                  80;
+ 	server_name             mysql.antijob.com;
+    root                    /etc/phpmyadmin;
+    #charset koi8-r;
+    #access_log  logs/host.access.log  main;
+
+        location / {
+            if (!-f $request_filename) {
+                rewrite ^(.*)(.jpg|.JPG|.gif|.GIF|.png|.PNG)$ /resize$1$2 last;
+                }
+        }
+
+        location /resize {
+            perl resize::handler;
+        }
+
+        error_page   500 502 503 504  /50x.html;
+
+        location = /50x.html {
+        }
+
+        location ~ .php$ {
+            fastcgi_pass   127.0.0.1:9000;
+            include        fastcgi_params;
+        }
+    }
+
+server {
+    server_name             mysql.antijob.com;
+    listen                  443;
+    ssl                     on;
+    ssl_certificate         /etc/ssl/certs/openyardtempssl.crt;
+    ssl_certificate_key     /etc/ssl/private/openyardtempssl.key;
+    root                    /etc/phpmyadmin;
+
+        location ~ .php$ {
+            fastcgi_pass   127.0.0.1:9000;
+            include        fastcgi_params;
+        }
+    }
