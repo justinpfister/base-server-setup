@@ -25,3 +25,8 @@ This repo is designed to be the jumping point to initializing and setting up the
 
 3. sudo sh run-webserver.sh
 
+## Updating the Server Setup Repository
+
+- cd ~/base-server-setup
+- git update
+
