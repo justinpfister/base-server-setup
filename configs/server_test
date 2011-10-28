@@ -1,0 +1,44 @@
+server {
+    listen                  80;
+    server_name             localhost;
+	server_name             hello.kyotist.com;
+    root                    /usr/local/nginx/html;
+    #charset koi8-r;
+    #access_log  logs/host.access.log  main;
+
+        location / {
+            if (!-f $request_filename) {
+                rewrite ^(.*)(.jpg|.JPG|.gif|.GIF|.png|.PNG)$ /resize$1$2 last;
+                }
+        }
+
+        location /resize {
+            perl resize::handler;
+        }
+
+        error_page   500 502 503 504  /50x.html;
+
+        location = /50x.html {
+        }
+
+        location ~ .php$ {
+            root           html;
+            fastcgi_pass   127.0.0.1:9000;
+            include        fastcgi_params;
+        }
+    }
+
+server {
+    listen                  443;
+    ssl                     on;
+    ssl_certificate         /etc/ssl/certs/openyardtempssl.crt
+    ssl_certificate_key     /etc/ssl/private/openyardtempssl.key
+    keepalive_timeout       70;
+    server_name             hello.kyotist.com;
+    root                    /usr/local/nginx/html;
+
+        location ~ .php$ {
+            fastcgi_pass   127.0.0.1:9000;
+            include        fastcgi_params;
+        }
+    }
