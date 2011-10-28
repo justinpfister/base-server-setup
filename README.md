@@ -15,7 +15,10 @@ This repo is designed to be the jumping point to initializing and setting up the
 
 ### run-dbserver-setup.sh :
 
->   Designed to setup the database and other storage applications.
+``sh run-dbserver-setup.sh``
+
+>   Designed to setup the database and other storage applications. The primary objective of the server is to run MySQL et al. However, it also includes Nginx and PHP for running phpmysql admin and simular programs.
+
 
 -------------------
 
