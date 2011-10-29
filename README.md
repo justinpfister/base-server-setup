@@ -36,7 +36,7 @@ This repo is designed to be the jumping point to initializing and setting up the
 - git pull
 
 # DB Setup Notes
-
-`` sudo nano /usr/share/phpmyadmin/conf.inc.php``
-
-$cfg['blowfish_secret'] = 'mydemopass'; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
+- create conf.inc.php from sample and modify the blowfish secret
+`` cp /var/www/phpmyadmin/config.sample.inc.php /var/www/phpmyadmin/conf.inc.php``
+`` sudo nano /var/www/phpmyadmin/conf.inc.php``
+- $cfg['blowfish_secret'] = 'mydemopass'; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
