@@ -8,3 +8,5 @@ git pull
 
 # Update the base nginx config files
 sudo sh file-mods/nginx-configs.sh
+
+sudo /etc/init.d/nginx restart
