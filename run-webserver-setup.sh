@@ -48,7 +48,6 @@ sudo touch /usr/local/nginx/conf/sites-available/default
 sudo /bin/cp -Rf configs/server_test /usr/local/nginx/conf/sites-available/default
 #-------------------------------------------------
 
-
 #-------------------------------------------------
 # Add Default privleges to the test files.
 
@@ -56,6 +55,17 @@ sudo chown -R www-data:webdev /usr/local/nginx/html
 
 sudo chmod -R ug=wrx,o= /usr/local/nginx/html
 #-------------------------------------------------
+
+
+#-------------------------------------------------
+# Add the default base nginx config and fastcgi_params
+
+sudo /bin/cp -Rf configs/nginx.conf /usr/local/nginx/conf/nginx.conf
+
+sudo /bin/cp -Rf configs/fastcgi_params /usr/local/nginx/conf/fastcgi_params
+#---------------------------------------------------
+
+
 
 #### Add PERL FILES ####
 sudo cp perl/resize.pm /etc/perl/resize.pm
