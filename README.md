@@ -37,6 +37,15 @@ This repo is designed to be the jumping point to initializing and setting up the
 
 # DB Setup Notes
 - create conf.inc.php from sample and modify the blowfish secret
-`` cp /var/www/phpmyadmin/config.sample.inc.php /var/www/phpmyadmin/conf.inc.php``
-`` sudo nano /var/www/phpmyadmin/conf.inc.php``
+
+`` cp /var/www/phpmyadmin/config.sample.inc.php /var/www/phpmyadmin/config.inc.php``
+
+`` sudo nano /var/www/phpmyadmin/config.inc.php``
+
 - $cfg['blowfish_secret'] = 'mydemopass'; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
+
+``mysql --user=<un> --password=<pw> < /var/www/phpmyadmin/scripts/create_tables.sql``
+
+- un-comment Storage database and tables -- relating to 'PMADB'
+
+- Comment out : bind-address : 127.0.0.1 --- /etc/mysql$ sudo nano my.cnf
