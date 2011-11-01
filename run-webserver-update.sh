@@ -10,3 +10,11 @@ git pull
 sudo sh file-mods/nginx-configs.sh
 
 sudo /etc/init.d/nginx restart
+
+
+
+# reload web permisions.
+
+sudo chown -R www-data:webdev /var/www
+
+sudo chmod -R ug=wrx,o= /var/www
