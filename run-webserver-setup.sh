@@ -2,6 +2,16 @@
 
 sudo mkdir /var/www
 
+#-------------------------------------------------
+# Add Default privleges to the web area.
+
+sudo chown -R www-data:webdev /var/www
+
+sudo chmod -R ug=wrx,o= /var/www
+#-------------------------------------------------
+
+
+
 #---------------------------------
 # Install many of the required dependencies -- a lot of apt-gets.
 sudo sh server-setup.sh
