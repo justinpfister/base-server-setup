@@ -76,6 +76,21 @@ sudo /bin/cp -Rf configs/fastcgi_params /usr/local/nginx/conf/fastcgi_params
 #---------------------------------------------------
 
 
+#-------------------------------------
+# Add GeoIP database files
+
+sudo mkdir /usr/local/nginx/geoip
+
+sudo wget http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz
+
+sudo gunzip GeoIP.dat.gz
+
+sudo wget http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz
+
+sudo gunzip GeoLiteCity.dat.gz
+#-----------------------------------------
+
+
 
 #### Add PERL FILES ####
 sudo cp perl/resize.pm /etc/perl/resize.pm
