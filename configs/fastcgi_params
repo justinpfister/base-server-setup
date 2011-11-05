@@ -29,4 +29,3 @@ fastcgi_param  REDIRECT_STATUS    200;
 fastcgi_param   COUNTRY            $geoip_country_name;
 fastcgi_param   CITY               $geoip_city;
 fastcgi_param   REGION             $geoip_region;
-
