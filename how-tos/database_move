@@ -1,0 +1,30 @@
+Want to move a database from one server to another
+===================================================
+
+Here's a non-fancy -- non-100% way to copy.. Should be good under low traffic during a slow period.. or for dev purposes
+
+SOURCE DATABASE SERVER
+=======================
+
+    cd /dir/where/u/want/the/dump // ideally this should be a web directory.. since the steps following will involve a wget
+
+    mysqldump --opt -u openyard4 -popenyard4life openyard4 > openyard4-backupsql.sql
+
+    // hopefully now the database is WWW-accessible
+
+DESTINATION DATABASE SERVER
+============================
+
+    cd ~/
+
+    wget http://www.openyard.com/dbcopy/openyard4-backupsql.sql
+
+SOURCE DATABASE
+===============
+
+    rm openyard4-backupsql.sql
+
+DESTINATION DATABASE
+====================
+
+mysql -u <root> --password=<password> <openyard4> < openyard4-backupsql.sql

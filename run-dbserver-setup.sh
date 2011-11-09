@@ -29,3 +29,4 @@ sudo /bin/cp -Rf configs/db_server /etc/nginx/sites-enabled/default
 sudo chown -R www-data:webdev /var/www
 
 sudo chmod -R ug=wrx,o= /var/www
+
