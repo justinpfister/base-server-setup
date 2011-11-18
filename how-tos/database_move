@@ -8,7 +8,7 @@ SOURCE DATABASE SERVER
 
     cd /dir/where/u/want/the/dump // ideally this should be a web directory.. since the steps following will involve a wget
 
-    mysqldump --opt -u openyard4 -popenyard4life openyard4 > openyard4-backupsql.sql
+    mysqldump --opt -u openyard4 -popenyard4life openyard4 > oy4copy.sql
 
     // hopefully now the database is WWW-accessible
 
