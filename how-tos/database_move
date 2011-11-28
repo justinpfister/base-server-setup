@@ -17,14 +17,16 @@ DESTINATION DATABASE SERVER
 
     cd ~/
 
-    wget http://www.openyard.com/dbcopy/openyard4-backupsql.sql
+    rm oy4copy.sql
+
+    wget http://www.openyard.com/dbcopy/oy4copy.sql
 
 SOURCE DATABASE
 ===============
 
-    rm openyard4-backupsql.sql
+    rm oy4copy.sql
 
 DESTINATION DATABASE
 ====================
 
-mysql -u <root> --password=<password> <openyard4> < openyard4-backupsql.sql
+mysql -u <root> --password=<password> <openyard4> < oy4copy.sql
