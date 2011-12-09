@@ -2,3 +2,8 @@ Find a file
 --------------------
 sudo grep "whatcha looking for" /var/www/*.php
 
+#un tar.gz
+tar -C /myfolder -zxvf yourfile.tar.gz
+
+#copy contents of a dir (Director must exist)
+sudo cp -r oldOpenyard4files/* /var/www/oldOpenyard4files
