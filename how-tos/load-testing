@@ -1,0 +1,7 @@
+Apache Load Testing
+============================
+
+ab -n 100 -c 10 http://www.yahoo.com/
+
+100 = requests
+10 = concurrency
