@@ -1,0 +1,8 @@
+login from ssh:
+
+mysql -u <root> --password=<password>
+
+use <database>
+
+> select * from <table>;
+
