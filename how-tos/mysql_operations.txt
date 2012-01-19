@@ -6,3 +6,6 @@ use <database>
 
 > select * from <table>;
 
+create database <name>;
+drop database <name>;
+
