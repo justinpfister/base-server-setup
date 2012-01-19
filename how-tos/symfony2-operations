@@ -2,6 +2,11 @@ sudo setfacl -R -m u:www-data:rwx -m u:justin:rwx app/cache app/logs app/Resourc
 
 sudo setfacl -dR -m u:www-data:rwx -m u:justin:rwx app/cache app/logs app/Resources/java
 
+
+remove cache:
+
+
+
 # dump assetic cache
 php app/console assetic:dump --env=dev
 
