@@ -7,3 +7,16 @@ tar -C /myfolder -zxvf yourfile.tar.gz
 
 #copy contents of a dir (Director must exist)
 sudo cp -r oldOpenyard4files/* /var/www/oldOpenyard4files
+
+
+
+Clear Large Files: (Mainly for Slicehost Old Openyard4)
+-----------------------
+-- At this point, mail isn't setup correctly so root is somehow gathering tons of mail.
+/var/mail  : delete some user-folders
+rm -r /var/mail/<folder>
+
+Find LArger Files :
+sudo find /*/* -type f -size +900M -print  ## will get /home/justin as well as /var/mail and /var/log
+
+
