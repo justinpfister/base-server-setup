@@ -12,3 +12,6 @@ php app/console assetic:dump --env=dev
 
 # clear console cache
 php app/console cache:clear --env=dev --no-debug
+
+# symfony2 regenerate assets
+php app/console assets:install web

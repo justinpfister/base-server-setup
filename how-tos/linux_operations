@@ -20,3 +20,4 @@ Find LArger Files :
 sudo find /*/* -type f -size +900M -print  ## will get /home/justin as well as /var/mail and /var/log
 
 
+
