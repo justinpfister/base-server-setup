@@ -15,3 +15,6 @@ php app/console cache:clear --env=dev --no-debug
 
 # symfony2 regenerate assets
 php app/console assets:install web
+
+# get routes
+php app/console router:debug
