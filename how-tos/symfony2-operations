@@ -1,6 +1,6 @@
-sudo setfacl -R -m u:www-data:rwx -m u:justin:rwx app/cache app/logs app/Resources/java
+sudo setfacl -R -m u:www-data:rwx -m u:justin:rwx app/cache app/logs app/Resources/java prodimgs
 
-sudo setfacl -dR -m u:www-data:rwx -m u:justin:rwx app/cache app/logs app/Resources/java
+sudo setfacl -dR -m u:www-data:rwx -m u:justin:rwx app/cache app/logs app/Resources/java prodimgs
 
 
 remove cache:
