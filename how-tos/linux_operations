@@ -20,4 +20,5 @@ Find LArger Files :
 sudo find /*/* -type f -size +900M -print  ## will get /home/justin as well as /var/mail and /var/log
 
 
-
+Another way to find large files. Seems to work pretty well.
+sudo du -ma / | sort -nr | head -n 20
