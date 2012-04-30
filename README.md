@@ -2,6 +2,10 @@ This repo is designed to be the jumping point to initializing and setting up the
 
 ##Usig the Following Files :
 
+### git ###
+
+> ``Git Clone`` ``git::location`` ``director`` will get you going with git!
+
 ###  run-webserver-setup.sh :
 
 >   Designed to setup applications and run apt-get etc. This should only be run once.
