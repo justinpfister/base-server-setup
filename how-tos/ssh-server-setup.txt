@@ -10,7 +10,7 @@ cp id_rsa* key_backupCopies
 rm id_rsa*
 
 ############# END ##########
-
+sudo
 
 ssh-keygen -t rsa -C "justin@openyard.com"
 
