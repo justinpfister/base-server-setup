@@ -13,7 +13,7 @@ sudo apt-get -y install memcached php5-memcache php5-memcached php-apc php5-mysq
 
 
 ######################
-## Install Node
+## Install Node .. Install Less
 #######################
 
 sudo apt-get install python-software-properties
@@ -23,3 +23,7 @@ sudo add-apt-repository ppa:chris-lea/node.js
 sudo apt-get update
 
 sudo apt-get install nodejs npm
+
+sudo mv configs/.npmrc ~/
+
+sudo npm install less
