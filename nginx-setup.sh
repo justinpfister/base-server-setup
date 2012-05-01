@@ -14,7 +14,7 @@ mkdir ~/sources
 
 cd ~/sources/
 
-sudo wget http://nginx.org/download/nginx-1.1.6.tar.gz
+sudo wget http://nginx.org/download/nginx-1.2.0.tar.gz
 sudo wget -O nginx-upstream-fair.tar.gz https://github.com/justinpfister/nginx-upstream-fair/tarball/master
 sudo wget -O nginx-echo.tar.gz https://github.com/justinpfister/echo-nginx-module/tarball/master
 
@@ -22,9 +22,9 @@ sudo tar -zxvf nginx-upstream-fair.tar.gz
 
 sudo tar -zxvf nginx-echo.tar.gz
 
-sudo tar -zxvf nginx-1.1.6.tar.gz
+sudo tar -zxvf nginx-1.2.0.tar.gz
 
-cd nginx-1.1.6/
+cd nginx-1.2.0/
 
 
 sudo ./configure \
