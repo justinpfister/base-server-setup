@@ -24,6 +24,8 @@ sudo apt-get update
 
 sudo apt-get -y install nodejs npm
 
-sudo mv configs/.npmrc ~/
+cd /usr/lib/nodejs/
 
 sudo npm install less
+
+cd ~/base-server-setup
