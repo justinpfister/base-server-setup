@@ -1,0 +1,18 @@
+
+Things I had to do (In no particular order)
+--------------------------------------------
+1) setup SSL
+2) setup SSH
+3) git clone Repos (app folders)
+4) git clone base-server-install
+
+5) configured ACL via /etc/fstab
+        What I did:
+        ------------------------------------
+        /home    ext4   defaults,acl   0   2
+        sudo mount -o remount /
+
+6)  Reset some permissions:
+    --------------------------
+    sudo chown -R www-data:webdev /var/www
+    sudo chmod -R ug=wrx,o= /var/www
