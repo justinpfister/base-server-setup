@@ -85,9 +85,16 @@ sudo wget http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoI
 
 sudo gunzip GeoIP.dat.gz
 
+sudo mv GeoIP.dat /usr/local/nginx/geoip/
+
+sudo mv
+
 sudo wget http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz
 
 sudo gunzip GeoLiteCity.dat.gz
+
+sudo mv GeoLiteCity.dat /usr/local/nginx/geoip/
+
 #-----------------------------------------
 
 
