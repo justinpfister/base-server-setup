@@ -12,3 +12,14 @@ sudo apt-get -y install php5-fpm php5-cgi
 sudo apt-get -y install memcached php5-memcache php5-memcached php-apc php5-mysql php5-curl php5-gd php5-sqlite php5-intl
 
 
+######################
+## Install Node
+#######################
+
+sudo apt-get install python-software-properties
+
+sudo add-apt-repository ppa:chris-lea/node.js
+
+sudo apt-get update
+
+sudo apt-get install nodejs npm
