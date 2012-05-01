@@ -29,7 +29,7 @@ cd nginx-1.2.0/
 
 sudo ./configure \
 --sbin-path=/usr/local/sbin \
---conf-path=/home/justin/base-server-setup/configs/nginx.conf
+--conf-path=/home/justin/base-server-setup/configs/nginx.conf \
 --with-debug \
 --with-http_addition_module \
 --with-http_dav_module \
