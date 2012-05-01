@@ -1,3 +1,16 @@
 
 Things I had to do (In no particular order)
 --------------------------------------------
+3) git clone Repos (app folders)
+
+5) configured ACL via /etc/fstab
+        What I did:
+        ------------------------------------
+        /home    ext4   defaults,acl   0   2
+
+        sudo mount -o remount /
+
+6)  Reset some permissions:
+    --------------------------
+    sudo chown -R www-data:webdev /var/www
+    sudo chmod -R ug=wrx,o= /var/www
