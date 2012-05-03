@@ -34,3 +34,13 @@ cd /usr/lib/nodejs/
 sudo npm install less
 
 cd ~/base-server-setup
+
+##############################
+## Install PHP Documentation  AKA phpdoc
+#################################
+
+sudo apt-get -y install graphviz
+
+sudo pear channel-discover pear.phpdoc.org
+
+sudo pear install phpdoc/phpDocumentor-alpha
