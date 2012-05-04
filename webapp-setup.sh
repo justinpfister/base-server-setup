@@ -5,17 +5,21 @@
 ## Install PHP-FPM
 ###########################
 
+# sudo add-apt-repository ppa:ondrej/php5
+
 sudo apt-get -y install php5-cli php5-common
 
 # Waiting on 5.4
-sudo apt-get -y install php5-suhosin
+# sudo apt-get -y install php5-suhosin
 
 sudo apt-get -y install php5-fpm php5-cgi
 
-sudo apt-get -y install memcached php-apc php5-mysql php5-curl php5-gd php5-sqlite php5-intl php-apc
+sudo apt-get -y install memcached php-apc php5-mysql php5-curl php5-gd php5-sqlite php5-intl php-apc php-pear php5-xsl php5-dev libmemcached-dev
 
 # Waiting on 5.4
-sudo apt-get -y install php5-memcache php5-memcached php5-xsl php-pear
+# using PECL to install memcached.
+sudo pecl install memcached
+# sudo apt-get -y install php5-memcache php5-memcached
 
 ######################
 ## Install Node .. Install Less
