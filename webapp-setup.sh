@@ -50,3 +50,15 @@ sudo apt-get -y install graphviz
 sudo pear channel-discover pear.phpdoc.org
 
 sudo pear install phpdoc/phpDocumentor-alpha
+
+##################################
+## Install PHP Unit -- UnitTesting
+######################################
+
+sudo pear channel-discover pear.phpunit.de
+
+sudo pear channel-discover components.ez.no
+
+sudo pear channel-discover pear.symfony-project.com
+
+sudo pear install PEAR-1.9.4
