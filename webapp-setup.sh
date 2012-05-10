@@ -23,6 +23,13 @@ sudo apt-get -y install memcached php-apc php5-mysql php5-curl php5-gd php5-sqli
 sudo pecl install memcached
 # sudo apt-get -y install php5-memcache php5-memcached
 
+#####################################
+## mysql-client
+#########################
+
+sudo apt-get -y install mysql-client
+
+
 ######################
 ## Install Node .. Install Less
 #######################
