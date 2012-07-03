@@ -13,5 +13,5 @@ sudo setfacl -dR -m u:www-data:rwx -m u:justin:rwx app/cache app/logs app/Resour
 cd ~/base-server-setup
 
 sudo chown -R www-data:webdev /var/www
-sudo chmod -R ug=wrx,o= /var/www
+sudo chmod -R ug=rx,o= /var/www
 
