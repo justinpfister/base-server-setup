@@ -20,3 +20,5 @@ php app/console assets:install web
 # get routes
 php app/console router:debug
 
+# get defined services.
+php app/console container:debug
