@@ -6,7 +6,7 @@ sudo setfacl -dR -m u:www-data:rwx -m u:justin:rwx -m g:webdev:rwx app/cache app
 remove cache:
 
 #clear cache
-sudo rm -r cache/*
+sudo rm -r app/cache/*
 
 # dump assetic cache
 php app/console assetic:dump --env=dev
