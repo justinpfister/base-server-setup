@@ -5,7 +5,7 @@
 ## Install PHP-FPM
 ###########################
 
-sudo add-apt-repository ppa:ondrej/php5
+#sudo add-apt-repository ppa:ondrej/php5
 
 sudo apt-get update
 
