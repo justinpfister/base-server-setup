@@ -6,9 +6,9 @@ cd /var/www/development-openyard6
 
 php bin/vendors install
 
-sudo setfacl -R -m u:www-data:rwx -m u:justin:rwx app/cache app/logs app/Resources/java prodimgs src/Openyard/PayPalBridgeBundle/../Resources/tmp
+sudo setfacl -R -m u:www-data:rwx -m u:justin:rwx app/cache app/logs app/Resources/java prodimgs src/Openyard/PayPalBridgeBundle/Resources/tmp
 
-sudo setfacl -dR -m u:www-data:rwx -m u:justin:rwx app/cache app/logs app/Resources/java prodimgs src/Openyard/PayPalBridgeBundle/../Resources/tmp
+sudo setfacl -dR -m u:www-data:rwx -m u:justin:rwx app/cache app/logs app/Resources/java prodimgs src/Openyard/PayPalBridgeBundle/Resources/tmp
 
 cd ~/base-server-setup
 
